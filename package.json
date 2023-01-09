@@ -1,7 +1,7 @@
 {
   "name": "xxss-cli",
-  "version": "0.0.1",
-  "description": "compile less or scss into ttss",
+  "version": "1.0.0",
+  "description": "将scss或者less生成各厂小程序ss。",
   "bin": {
     "xxss": "bin/xxss.js"
   },
@@ -11,12 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/YongzWang/xxss-cli.git"
+    "url": "git+https://github.com/YongzWang/xxss-cli.git"
   },
   "keywords": [
     "less",
     "scss",
     "ttss",
+    "qss",
+    "",
     "xxss"
   ],
   "author": "yz",
@@ -26,6 +28,13 @@
     "chalk": "^2.4.1",
     "chokidar": "^2.0.4",
     "commander": "^2.16.0",
-    "less": "^3.0.4"
+    "less": "^3.0.4",
+    "node-sass": "^6.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/YongzWang/xxss-cli/issues"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }

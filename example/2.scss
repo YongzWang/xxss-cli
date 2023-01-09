@@ -1,0 +1,11 @@
+$color: #fff;
+
+.bb {
+  background: #fff;
+  &.cc {
+    color: #000;
+  }
+  &.dd{
+    color: $color;
+  }
+}
