@@ -15,7 +15,7 @@ $ npm install -g xxss-cli
 > minicodepath 小程序开发根目录
 
 ```
-$ xxss ./minicodepath -o <原始文件类型> -t <目标文件类型>
+$ xxss ./minicodepath -o <原始文件类型> -t <目标文件类型> -n <携带参数表示只监听新的改动>
 
 
 $ xxss ./miniApp -o scss -t wxss 
@@ -26,7 +26,6 @@ $ xxss ./miniApp -o scss -t wxss
 原始文件类型： scss|less
 目标文件类型： 随便写
 ```
-
 
 ## License
 

@@ -16,8 +16,9 @@ program
     .arguments('<path>')
     .option('-o, --original <oFileType>', '指定原始文件类型  less|scss', 'less')
     .option('-t, --target <tFileType>', '指定目标文件类型 ttss|wxss...', 'ttss')
+    .option('-n, --watchNew <boolean>', '只监听新的改变')
     .action((dir, options, command) => {
-        console.log(options.target, options.original, 'options.target')
+        console.log(options.target, options.original, options.watchNew, 'options.target')
         let originalType = options.original;
         let targetType = options.target;
         fs.stat(dir, (err, stats) => {
@@ -26,7 +27,7 @@ program
                 console.log(chalk.bgYellow.red(` 🚀监听启动.`))
                 console.log(chalk.bgYellow.red(` 📃原始文件类型：${originalType}`));
                 console.log(chalk.bgYellow.red(` 📃目标文件类型：${targetType}`));
-                watch(dir, originalType, targetType)
+                watch(dir, originalType, targetType, options.watchNew)
             }
         })
     })
